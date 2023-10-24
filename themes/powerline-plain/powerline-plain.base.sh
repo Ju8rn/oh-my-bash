@@ -14,7 +14,7 @@ function __powerline_left_segment {
 function __powerline_prompt_command {
   local last_status="$?" ## always the first
 
-  LEFT_PROMPT=""
+  LEFT_PROMPT="\e[44m\D{ %H:%m:%S}\e0 "
 
   ## left prompt ##
   for segment in $POWERLINE_PROMPT; do
@@ -24,7 +24,7 @@ function __powerline_prompt_command {
   [[ "${last_status}" -ne 0 ]] && __powerline_left_segment $(__powerline_last_status_prompt ${last_status})
   [[ -n "${LEFT_PROMPT}" ]] && LEFT_PROMPT+="$(set_color ${LAST_SEGMENT_COLOR} -) ${_omb_prompt_normal}"
 
-  PS1="${LEFT_PROMPT} "
+  PS1="${LEFT_PROMPT}"
 
   ## cleanup ##
   unset LEFT_PROMPT

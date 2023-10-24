@@ -90,7 +90,7 @@ function __powerline_scm_prompt {
 }
 
 function __powerline_cwd_prompt {
-  echo "$(pwd | sed "s|^${HOME}|~|")|${CWD_THEME_PROMPT_COLOR}"
+  echo "$(pwd | sed "s|^${HOME}|~|")>|${CWD_THEME_PROMPT_COLOR}"
 }
 
 function __powerline_clock_prompt {
