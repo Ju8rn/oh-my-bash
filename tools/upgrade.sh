@@ -50,7 +50,7 @@ function _omb_upgrade {
     '\____/_/ /_/  /_/ /_/ /_/\__, /  /_.___/\__,_/____/_/ /_/ ' \
     '                        /____/                            '
   printf "${BLUE}%s\n" "Hooray! Oh My Bash has been updated and/or is at the current version."
-  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/ohmybash/oh-my-bash"
+  printf "${BLUE}${BOLD}%s${NORMAL}\n" "To keep up on the latest news and updates, follow us on GitHub: https://github.com/Ju8rn/oh-my-bash"
   if [[ $- == *i* ]]; then
     declare -f _omb_util_unload &>/dev/null && _omb_util_unload
     # shellcheck disable=SC1090
