@@ -25,13 +25,13 @@ Oh My Bash is installed by running one of the following commands in your termina
 #### via curl
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ju8rn/oh-my-bash/master/tools/install.sh)"
 ```
 
 #### via wget
 
 ```shell
-bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/Ju8rn/oh-my-bash/master/tools/install.sh -O -)"
 ```
 
 This replaces `~/.bashrc` with the version provided by Oh My Bash. The original `.bashrc` is backed up with the name `~/.bashrc.omb-TIMESTAMP`.
@@ -49,7 +49,7 @@ fi
 
 ### Plugins
 
-Oh My Bash comes with a shit load of plugins to take advantage of. You can take a look in the [plugins](https://github.com/ohmybash/oh-my-bash/tree/master/plugins) directory and/or the [wiki](https://github.com/ohmybash/oh-my-bash/wiki/Plugins) to see what's currently available.
+Oh My Bash comes with a shit load of plugins to take advantage of. You can take a look in the [plugins](https://github.com/Ju8rn/oh-my-bash/tree/master/plugins) directory and/or the [wiki](https://github.com/Ju8rn/oh-my-bash/wiki/Plugins) to see what's currently available.
 
 #### Enabling Plugins
 
@@ -77,7 +77,7 @@ Most plugins (should! we're working on this) include a __README__, which documen
 
 ### Themes
 
-We'll admit it. Early in the Oh My Bash world, we may have gotten a bit too theme happy. We have over one hundred themes now bundled. Most of them have [screenshots](https://github.com/ohmybash/oh-my-bash/wiki/Themes) on our wiki or alternatively [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/themes) wiki.
+We'll admit it. Early in the Oh My Bash world, we may have gotten a bit too theme happy. We have over one hundred themes now bundled. Most of them have [screenshots](https://github.com/Ju8rn/oh-my-bash/wiki/Themes) on our wiki or alternatively [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/themes) wiki.
 
 #### Selecting a Theme
 
@@ -94,14 +94,14 @@ To use a different theme, simply change the value to match the name of your desi
 ```shell
 OSH_THEME="agnoster" # (this is one of the fancy ones)
 # you might need to install a special Powerline font on your console's host for this to work
-# see https://github.com/ohmybash/oh-my-bash/wiki/Themes#agnoster
+# see https://github.com/Ju8rn/oh-my-bash/wiki/Themes#agnoster
 ```
 
 Open up a new terminal window and your prompt should look something like this:
 
 ![Agnoster theme](img/example_powerline.png)
 
-In case you did not find a suitable theme for your needs, please have a look at the wiki for [more of them](https://github.com/ohmybash/oh-my-bash/wiki/External-themes).
+In case you did not find a suitable theme for your needs, please have a look at the wiki for [more of them](https://github.com/Ju8rn/oh-my-bash/wiki/External-themes).
 
 If you're feeling feisty, you can let the computer select one randomly for you each time you open a new terminal window.
 
@@ -130,7 +130,7 @@ The default location is `~/.oh-my-bash` (hidden in your home directory)
 If you'd like to change the install directory with the `OSH` environment variable, either by running `export OSH=/your/path` before installing, or by setting it before the end of the install pipeline like this:
 
 ```shell
-export OSH="$HOME/.dotfiles/oh-my-bash"; bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+export OSH="$HOME/.dotfiles/oh-my-bash"; bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ju8rn/oh-my-bash/master/tools/install.sh)"
 ```
 
 #### Unattended install
@@ -140,7 +140,7 @@ flag `--unattended` to the `install.sh` script. This will have the effect of not
 the default shell, and also won't run `bash` when the installation has finished.
 
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ju8rn/oh-my-bash/master/tools/install.sh)" --unattended
 ```
 
 #### System-wide installation
@@ -148,7 +148,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 For example, Oh My Bash can be installed to `/usr/local/share/oh-my-bash` for the system-wide installation by specifying the option `--prefix=PREFIX`.
 
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --prefix=/usr/local
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ju8rn/oh-my-bash/master/tools/install.sh)" --prefix=/usr/local
 ```
 
 To enable Oh My Bash, the Bash startup file `.bashrc` needs to be manually set up by each user.
@@ -164,7 +164,7 @@ cp /usr/local/share/oh-my-bash/bashrc ~/.bashrc
 ##### 1. Clone the repository:
 
 ```shell
-git clone https://github.com/ohmybash/oh-my-bash.git ~/.oh-my-bash
+git clone https://github.com/Ju8rn/oh-my-bash.git ~/.oh-my-bash
 ```
 
 ##### 2. *Optionally*, backup your existing `~/.bashrc` file:
@@ -276,7 +276,7 @@ If you want to uninstall `oh-my-bash`, just run `uninstall_oh_my_bash` from the 
 
 I'm far from being a [Bash](https://www.gnu.org/software/bash/) expert and suspect there are many ways to improve – if you have ideas on how to make the configuration easier to maintain (and faster), don't hesitate to fork and send pull requests!
 
-We also need people to test out pull-requests. So take a look through [the open issues](https://github.com/ohmybash/oh-my-bash/issues) and help where you can.
+We also need people to test out pull-requests. So take a look through [the open issues](https://github.com/Ju8rn/oh-my-bash/issues) and help where you can.
 
 ## Contributors
 
