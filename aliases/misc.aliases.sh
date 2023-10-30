@@ -126,6 +126,6 @@ fi
 # Outputs List of Loadable Modules (llm) for current kernel
 alias llm="find /lib/modules/$(uname -r) -type f -name '*.ko*'"
 # Used for piping to remote pastebin from cmdline to generate a url
-_omb_util_binary_exists curl && ix() { curl -n -F 'f:1=<-' http://ix.io ; }
+#_omb_util_binary_exists curl && ix() { curl -n -F 'f:1=<-' http://ix.io ; }
 # Used for piping to clipboard
 _omb_util_binary_exists xclip && alias xcopy="xclip -se c"
