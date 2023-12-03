@@ -14,7 +14,7 @@ function __powerline_left_segment {
 function __powerline_prompt_command {
   local last_status="$?" ## always the first
 
-  LEFT_PROMPT="\e[44m\D{ %H:%m:%S}\e0 "
+  LEFT_PROMPT="\[\e[44m\]\D{ %H:%m:%S} \[\e[0m\]"
 
   ## left prompt ##
   for segment in $POWERLINE_PROMPT; do
